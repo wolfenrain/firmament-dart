@@ -19,10 +19,20 @@ jobs:
       - name: 🔧 Compile to JS
         run: dart compile js main.dart
 
+      - name: 🗄️ Archive artifact
+        shell: sh
+        run: |
+          tar \
+            -cvf "artifact.tar" \
+            --exclude=.git \
+            --exclude=.github \
+            .
+
       - name: 🚚 Store output
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
-          path: ''
+          name: 'github-pages'
+          path: 'artifact.tar'
 
   deploy:
     needs: build
