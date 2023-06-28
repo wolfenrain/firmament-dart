@@ -1,11 +1,9 @@
-# Firmament Generator ::
+# Firmament Generator :: Dart
 
 A small poetry generator, always shifting shape (in the words of Florence + the Machine).
 
-Things I'm interested in ::
-- 🧪 program as poem
-- 🍓 raw material written by humans
-- ✨ ever-shifting meaning
-- 🔮 randomness as divination
+Originally written by @scarletteliza in Python: https://github.com/scarletteliza/firmament
 
-Read more at [scarletteliza.com](https://scarletteliza.com)
+Rewritten by [wolfenra.in](https://wolfenra.in) in Dart 🎯.
+
+For more poetry related things from Scarlett: https://www.scarletteliza.com/ 🔮
